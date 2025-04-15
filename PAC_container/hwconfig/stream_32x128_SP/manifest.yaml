@@ -1,0 +1,5 @@
+name: stream_32x128_SP
+description: Boot assets for the stream_32x128_SP configuration inside the  container
+revision: 1.0
+assets:
+    zcu104: zcu104
