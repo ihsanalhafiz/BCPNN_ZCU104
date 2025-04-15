@@ -4,9 +4,9 @@ This project demonstrates the deployment and execution of a BCPNN (Bayesian Conf
 
 ---
 
-## ?? System Setup & Preparation
+## System Setup & Preparation
 
-### ? Prerequisites
+### Prerequisites
 
 - ZCU104 Evaluation Board
 - Ubuntu 22.04 LTS running on the board
@@ -14,10 +14,10 @@ This project demonstrates the deployment and execution of a BCPNN (Bayesian Conf
 
 ---
 
-## ?? 1. ZCU104 Setup with Certified Ubuntu
+## 1. ZCU104 Setup with Certified Ubuntu
 
 1. Follow the official instructions from Xilinx to install Certified Ubuntu 22.04 on ZCU104:  
-   ?? [Getting Started with Certified Ubuntu 22.04 LTS for Xilinx Devices](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/2363129857/Getting+Started+with+Certified+Ubuntu+22.04+LTS+for+Xilinx+Devices)
+   [Getting Started with Certified Ubuntu 22.04 LTS for Xilinx Devices](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/2363129857/Getting+Started+with+Certified+Ubuntu+22.04+LTS+for+Xilinx+Devices)
 
 2. Install the Xilinx configuration tool:
 
@@ -34,11 +34,11 @@ This project demonstrates the deployment and execution of a BCPNN (Bayesian Conf
 
 ---
 
-## ?? 2. Prepare the Sysroot for Cross-Compilation
+## 2. Prepare the Sysroot for Cross-Compilation
 
 1. Download the sysroot for ZCU104:
 
-   ?? [Download Sysroot](https://people.canonical.com/~platform/images/xilinx/zcu-ubuntu-22.04/)
+   [Download Sysroot](https://people.canonical.com/~platform/images/xilinx/zcu-ubuntu-22.04/)
 
    File:  
    `iot-limerick-zcu-classic-desktop-2204-x05-2-20221123-58-sysroot.tar.xz`
@@ -53,7 +53,7 @@ This project demonstrates the deployment and execution of a BCPNN (Bayesian Conf
 
 ---
 
-## ?? 3. Install PAC (Platform Acceleration Component)
+## 3. Install PAC (Platform Acceleration Component)
 
 1. Copy the PAC container:
 
@@ -90,7 +90,7 @@ This project demonstrates the deployment and execution of a BCPNN (Bayesian Conf
 
 ---
 
-## ??? 4. Compile the Host Program
+## 4. Compile the Host Program
 
 ### General Format
 
@@ -114,13 +114,13 @@ make host \
   HOST_COMPILE=mnistmain_FPGA
 ```
 
-?? **Note:**  
+ **Note:**  
 - `HOST_COMPILE` should match the base filename of the `.cpp` file you want to compile.
 - For inference-only execution, use `mnistmain_FPGA_inference.cpp` instead.
 
 ---
 
-## ?? 5. Run the Application
+## 5. Run the Application
 
 ### Run Format
 
@@ -143,13 +143,13 @@ For **inference**, repeat the same structure using the inference binary.
 
 ---
 
-## ?? Directory Structure
+## Directory Structure
 
 ```text
 +-- PAC_container/
-¦   +-- hwconfig/stream_32x128_SP/zcu104/BCPNN_Kernel.xclbin
+   +-- hwconfig/stream_32x128_SP/zcu104/BCPNN_Kernel.xclbin
 +-- test/
-¦   +-- MNIST_ZCU104/mnistmain.par
+   +-- MNIST_ZCU104/mnistmain.par
 +-- mnistmain_FPGA.cpp
 +-- mnistmain_FPGA_inference.cpp
 +-- trained_data.bin
@@ -158,7 +158,7 @@ For **inference**, repeat the same structure using the inference binary.
 
 ---
 
-## ?? Notes
+## Notes
 
 - Ensure the `.xclbin` file matches the PAC installed on your board.
 - Use the same sysroot version as your ZCU104's Ubuntu image to avoid library mismatches.
