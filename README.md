@@ -128,6 +128,11 @@ make host \
 ./<binary_file> <parameter_file> <xclbin_file> <trained_data_output_file>
 ```
 
+before run, make sure you have correct dataset path from parameters file. if not, you need to run this code to get correct bin dataset
+[extract MNIST dataset](https://github.com/nbrav/BCPNNSim-ReprLearn/blob/main/Data/mnist/extract.py)
+
+or if you want to have it ready bin dataset, you can extract `Data.zip`
+
 ### Example
 
 ```bash
