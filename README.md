@@ -1,6 +1,6 @@
 # BCPNN on ZCU104
 
-This project demonstrates the deployment and execution of a BCPNN (Bayesian Confidence Propagation Neural Network) kernel on the Xilinx ZCU104 board using a Vitis acceleration flow with PAC (Platform Acceleration Component).
+This project demonstrates the deployment and execution of a BCPNN (Bayesian Confidence Propagation Neural Network) kernel on the Xilinx ZCU104 board using a Vitis acceleration flow with PAC (Platform Assets Container).
 
 ---
 
@@ -53,7 +53,7 @@ This project demonstrates the deployment and execution of a BCPNN (Bayesian Conf
 
 ---
 
-## 3. Install PAC (Platform Acceleration Component)
+## 3. Install PAC (Platform Assets Container)
 
 1. Copy the PAC container:
 
