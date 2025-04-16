@@ -170,11 +170,11 @@ For **inference**, repeat the same structure using the inference binary.
 - you can change the parameter file to change size of dataset for train and test
 
 # Authors
-M Ihsan Al Hafiz (miahafiz@kth.se)
-Naresh Ravichandran (nbrav@kth.se)
-Anders Lansner (ala@kth.se)
-Pawel Herman (paherman@kth.se)
-Artur Podobas (podobas@kth.se)
+M Ihsan Al Hafiz (miahafiz@kth.se),
+Naresh Ravichandran (nbrav@kth.se),
+Anders Lansner (ala@kth.se),
+Pawel Herman (paherman@kth.se),
+Artur Podobas (podobas@kth.se).
 
 # Supported by
 
