@@ -168,3 +168,14 @@ For **inference**, repeat the same structure using the inference binary.
 - Ensure the `.xclbin` file matches the PAC installed on your board.
 - Use the same sysroot version as your ZCU104's Ubuntu image to avoid library mismatches.
 - you can change the parameter file to change size of dataset for train and test
+
+# Authors
+M Ihsan Al Hafiz (miahafiz@kth.se)
+Naresh Ravichandran (nbrav@kth.se)
+Anders Lansner (ala@kth.se)
+Pawel Herman (paherman@kth.se)
+Artur Podobas (podobas@kth.se)
+
+# Supported by
+
+EXTRA-BRAIN project, funded by the European Union under grant no. 101135809. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them.
