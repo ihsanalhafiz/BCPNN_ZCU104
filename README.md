@@ -58,8 +58,8 @@ This project demonstrates the deployment and execution of a BCPNN (Bayesian Conf
 1. Copy the PAC container:
 
    ```bash
-   sudo cp -r ./PAC_container /boot/firmware/xlnx-config/
-   sudo cp -r ./PAC_container /usr/local/share/xlnx-config/
+   sudo cp -rf ./PAC_container /boot/firmware/xlnx-config/
+   sudo cp -rf ./PAC_container /usr/local/share/xlnx-config/
    ```
 
 2. Re-check configuration status:
@@ -179,3 +179,4 @@ Artur Podobas (podobas@kth.se).
 # Supported by
 
 EXTRA-BRAIN project, funded by the European Union under grant no. 101135809. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union. Neither the European Union nor the granting authority can be held responsible for them.
+
